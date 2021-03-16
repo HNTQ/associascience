@@ -18,13 +18,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Ateliers</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1">Événements</a>
+                <a class="nav-link" href="pages/evenement.html" tabindex="-1">Événements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1">Thèmes</a>
               </li>
             </ul>
           </div>
@@ -32,7 +35,7 @@
       </nav>
       <div aria-label="breadcrumb">
         <ol class="breadcrumb m-0">
-          <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Accueil</li>
         </ol>
       </div>
 
@@ -44,8 +47,8 @@
       <div class="container py-5 text-center">
         <div class="w-100">
           <h1 class="display-1">ASSOSCIENCES</h1>
-          <p class="lead mb-2">la science à portée de tous</p>
-          <a href="#" role="button" class="btn btn-primary px-5">See All Features</a>
+          <p class="lead mb-2">la science à portée de tous!</p>
+          <a href="#" role="button" class="btn btn-primary px-5">Tous nos thèmes</a>
         </div>
       </div>
     </div>
@@ -59,7 +62,7 @@
 
       <!-- Atelier Card (Start)-->
       <div class="container col-12 d-flex row m-0 mb-2 justify-content-around border rounded border-secondary">
-        <h2 class="col-12 text-center m-4">Ateliers</h2>
+        <h2 class="col-12 text-center m-4">Ateliers du moment</h2>
         
         <!-- Card (Start)-->
         <div class="card col-12 col-lg-3 p-0 m-2" style="width: 18rem;">
@@ -77,7 +80,7 @@
             <div id="collapseOne" class="collapse"  aria-labelledby="atelierOne">
               <div>
                 <form>
-                  <div class="mb-3">
+                  <div class="mb-2">
                     <label for="emailAtelier1" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="emailAtelier1" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">Votre adresse email ne sera jamais partagée</div>
@@ -113,7 +116,7 @@
             <div id="collapseTwo" class="collapse"  aria-labelledby="atelierTwo">
               <div>
                 <form>
-                  <div class="mb-3">
+                  <div class="mb-2">
                     <label for="emailAtelier2" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="emailAtelier2" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">Votre adresse email ne sera jamais partagée</div>
@@ -149,7 +152,7 @@
             <div id="collapseThree" class="collapse"  aria-labelledby="atelierThree">
               <div>
                 <form>
-                  <div class="mb-3">
+                  <div class="mb-2">
                     <label for="emailAtelier3" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="emailAtelier3" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">Votre adresse email ne sera jamais partagée</div>
@@ -177,7 +180,7 @@
       <!-- Événement (Start)-->
       <div class="container col-12 d-flex justify-content-center row border rounded border-secondary p-2 m-0 mb-2">       
         <h2 class="text-center m-4 col-12">Événements</h2>
-          <div class="card mb-3" style="max-width: 60%;">
+          <div class="card mb-3">
             <div class="row g-0">
               <div class="col-lg-4">
                 <img src="media/Nuit-etoilée.jpg" class="card-img" alt="Une nuit étoilée, il n'y a rien de plus beau">
@@ -185,8 +188,11 @@
               <div class="col-lg-8">
                 <div class="card-body">
                   <h5 class="card-title">Soirée étoilée</h5>
-                  <p class="card-text">Ce soir, grand évenement, le ciel sera dégagé sur toute la france, la lune sera absente, c'est une nuit parfaite pour observer les étoiles!</p>
-                  <a href="#" class="btn btn-primary">S'inscrire</a>
+                  <p class="card-text text-justify">Ce soir, grand évenement, le ciel sera dégagé sur toute la france, la lune sera absente, c'est une nuit parfaite pour observer les étoiles!<br/>
+                    Sortez vos lunettes et vos telescopes, trouvez le meilleur point de vu et ramenez nous votre plus beau cliché. les 50 plus belles prises de vues seront affiché sur notre site.<br/>
+                    Pour les amoureux... des étoiles, c'est tout simplement le bon moment pour aller s'allonger dans l'herbe et observer le ciel à la recherche de serénité et qui sait peut être aurez vous la chance
+                    d'appercevoir quelques étoiles filantes. </p>
+                  <a href="pages/evenement.html" class="btn btn-primary">En savoir plus</a>
               </div>
             </div>
           </div>
@@ -194,17 +200,6 @@
       </div>
       <!-- Événement (end)-->
     </main>
-    <h2 id="headingTwo">
-      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        S'inscrire
-      </button>
-    </h2>
-    <div id="collapseTwo" class="collapse"  aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div>
-        <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-
     <footer class="d-flex">
       <p class="align-self-end text-center col-12">@2021</p>
     </footer>
